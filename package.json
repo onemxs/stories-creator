@@ -1,0 +1,52 @@
+{
+  "name": "stories-creator",
+  "version": "1.0.0",
+  "description": "Stories Creator — selecciona y edita fotos para tus historias semanales",
+  "main": "electron/main.js",
+  "author": "Stories Creator",
+  "scripts": {
+    "electron": "electron .",
+    "electron:dev": "NODE_ENV=development electron .",
+    "build:mac": "electron-builder --mac"
+  },
+  "build": {
+    "appId": "com.storiescreator.app",
+    "productName": "Stories Creator",
+    "mac": {
+      "category": "public.app-category.photography",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ],
+      "icon": "electron/icon.icns"
+    },
+    "files": [
+      "electron/**/*",
+      "frontend/.next/**/*",
+      "frontend/public/**/*",
+      "frontend/package.json",
+      "backend/**/*",
+      "!backend/venv/**/*",
+      "!backend/outputs/**/*",
+      "!backend/__pycache__/**/*"
+    ],
+    "extraResources": [
+      {
+        "from": "backend/venv",
+        "to": "venv",
+        "filter": [
+          "**/*"
+        ]
+      }
+    ]
+  },
+  "devDependencies": {
+    "electron": "^42.3.0",
+    "electron-builder": "^26.8.1"
+  }
+}

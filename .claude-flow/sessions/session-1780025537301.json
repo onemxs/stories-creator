@@ -1,0 +1,14 @@
+{
+  "id": "session-1780025537301",
+  "startedAt": "2026-05-29T03:32:17.301Z",
+  "cwd": "/Volumes/UGreen HD/Stories Creator",
+  "context": {},
+  "metrics": {
+    "edits": 0,
+    "commands": 0,
+    "tasks": 0,
+    "errors": 0
+  },
+  "endedAt": "2026-05-29T03:32:17.498Z",
+  "duration": 198
+}

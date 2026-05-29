@@ -1,0 +1,47 @@
+# Node modules - NUNCA subir esto
+node_modules/
+*/node_modules/
+**/node_modules/
+
+# Python venv
+venv/
+*/venv/
+env/
+
+# Build outputs
+.next/
+dist/
+out/
+build/
+*.egg-info/
+
+# Environment files
+.env
+.env.local
+.env*.local
+
+# Database
+*.db
+database.db
+
+# Cache & logs
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.DS_Store
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Outputs
+backend/outputs/
+outputs/
+
+# Electron build
+electron/dist/
+electron/out/
